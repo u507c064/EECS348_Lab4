@@ -1,23 +1,30 @@
 <html>
-
 <head>
-    <h1>EECS 348 Lab Four, Practice 2</h1>
-    <link rel="stylesheet" href="practice1.css" />
+    <style>
+        #paragraph {
+            border-style: solid;
+            border-width: 5px;
+        }
+    </style>
 </head>
-
 <body>
-    Hello Everyone! This is an image called "Flowers in Chania"<br>
+    <h1>EECS 348 Lab Four Practice 2</h1>
 
-    <img src="img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
-    <br>
-    
-    <a href="https://www.w3schools.com/">Visit W3Schools.com!</a> <br>
+    <p id="paragraph">Blah.</p>
 
-    Here is a video of cats <br>
+    <script type="text/javascript" src="practice2.js"></script>
 
-    <iframe width="855" height="795" src="https://www.youtube.com/embed/hFFhUmSwHfY" title="Bottle Flip Lands On Cat&#39;s Head" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3>Border Colors:</h3>
+    Border R(0-255): <input type="text" id="border_R"> <br>
+    Border G(0-255): <input type="text" id="border_G"> <br>
+    Border B(0-255): <input type="text" id="border_B"> <br>
+    Border Width: <input type="text" id="border_width"><br>
 
+    <h3>Background Colors:</h3>
+    Background R(0-255): <input type="text" id="bg_R"> <br>
+    Background G(0-255): <input type="text" id="bg_G"> <br>
+    Background B(0-255): <input type="text" id="bg_B"> <br>
 
+    <button onclick="alert_paragraph_color()">Change the color</button>
 </body>
-
 </html>
